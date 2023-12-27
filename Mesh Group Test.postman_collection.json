@@ -1,0 +1,426 @@
+{
+	"info": {
+		"_postman_id": "6dbde446-5f1b-46d5-ac10-cfa8d5847b2e",
+		"name": "Mesh Group Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27534637"
+	},
+	"item": [
+		{
+			"name": "2. Протестировать работу API для получения данных о текущей погоде в выбранном городе.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q={{city}}&appid={{API}}&units=metric&lang=ru",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{city}}"
+						},
+						{
+							"key": "appid",
+							"value": "{{API}}"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "lang",
+							"value": "ru"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4. Отправить запрос для получения данных о погоде для нескольких городов и проверить правильность полученных данных.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/group?id={{citiesID}}&units=metric&appid={{API}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"group"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "{{citiesID}}"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "appid",
+							"value": "{{API}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7. Проверить API для получения данных о прогнозе погоды на 5 дней и проверить правильность полученных данных.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/forecast?q={{city}}&lang=ru&units=metric&appid={{API}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{city}}"
+						},
+						{
+							"key": "lang",
+							"value": "ru"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "appid",
+							"value": "{{API}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8.1. Отправить запрос для получения данных о прогнозе погоды для нескольких городов на 5 дней и проверить правильность полученных данных.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/forecast?q=Москва&lang=ru&units=metric&appid={{API}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Москва"
+						},
+						{
+							"key": "lang",
+							"value": "ru"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "appid",
+							"value": "{{API}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8.2. Отправить запрос для получения данных о прогнозе погоды для нескольких городов на 5 дней и проверить правильность полученных данных.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/forecast?q=Лондон&lang=ru&units=metric&appid={{API}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Лондон"
+						},
+						{
+							"key": "lang",
+							"value": "ru"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "appid",
+							"value": "{{API}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8.3. Отправить запрос для получения данных о прогнозе погоды для нескольких городов на 5 дней и проверить правильность полученных данных.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/forecast?q=Москва&lang=ru&units=metric&appid={{API}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Москва"
+						},
+						{
+							"key": "lang",
+							"value": "ru"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "appid",
+							"value": "{{API}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9. Проверить API для получения данных о прогнозе погоды на 16 дней и проверить правильность полученных данных.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/forecast/daily?cnt=16&appid=bd5e378503939ddaee76f12ad7a97608&q=Волгоград&units=metric&lang=ru",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast",
+						"daily"
+					],
+					"query": [
+						{
+							"key": "cnt",
+							"value": "16"
+						},
+						{
+							"key": "appid",
+							"value": "bd5e378503939ddaee76f12ad7a97608"
+						},
+						{
+							"key": "q",
+							"value": "Волгоград"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "lang",
+							"value": "ru"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10.1. Проверить API для получения данных о прогнозе погоды на 16 дней и проверить правильность полученных данных.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/forecast/daily?cnt=16&appid=bd5e378503939ddaee76f12ad7a97608&q=Москва&units=metric&lang=ru",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast",
+						"daily"
+					],
+					"query": [
+						{
+							"key": "cnt",
+							"value": "16"
+						},
+						{
+							"key": "appid",
+							"value": "bd5e378503939ddaee76f12ad7a97608"
+						},
+						{
+							"key": "q",
+							"value": "Москва"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "lang",
+							"value": "ru"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10.2. Проверить API для получения данных о прогнозе погоды на 16 дней и проверить правильность полученных данных.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/forecast/daily?cnt=16&appid=bd5e378503939ddaee76f12ad7a97608&q=Лондон&units=metric&lang=ru",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast",
+						"daily"
+					],
+					"query": [
+						{
+							"key": "cnt",
+							"value": "16"
+						},
+						{
+							"key": "appid",
+							"value": "bd5e378503939ddaee76f12ad7a97608"
+						},
+						{
+							"key": "q",
+							"value": "Лондон"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "lang",
+							"value": "ru"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10.3. Проверить API для получения данных о прогнозе погоды на 16 дней и проверить правильность полученных данных.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/forecast/daily?cnt=16&appid=bd5e378503939ddaee76f12ad7a97608&q=Москва&units=metric&lang=ru",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast",
+						"daily"
+					],
+					"query": [
+						{
+							"key": "cnt",
+							"value": "16"
+						},
+						{
+							"key": "appid",
+							"value": "bd5e378503939ddaee76f12ad7a97608"
+						},
+						{
+							"key": "q",
+							"value": "Москва"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "lang",
+							"value": "ru"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
