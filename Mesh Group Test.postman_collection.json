@@ -8,6 +8,24 @@
 	"item": [
 		{
 			"name": "2. Протестировать работу API для получения данных о текущей погоде в выбранном городе.",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Город Волгоград\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.name).to.eql(\"Волгоград\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -48,6 +66,19 @@
 		},
 		{
 			"name": "4. Отправить запрос для получения данных о погоде для нескольких городов и проверить правильность полученных данных.",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -84,6 +115,19 @@
 		},
 		{
 			"name": "7. Проверить API для получения данных о прогнозе погоды на 5 дней и проверить правильность полученных данных.",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -124,6 +168,19 @@
 		},
 		{
 			"name": "8.1. Отправить запрос для получения данных о прогнозе погоды для нескольких городов на 5 дней и проверить правильность полученных данных.",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -164,6 +221,19 @@
 		},
 		{
 			"name": "8.2. Отправить запрос для получения данных о прогнозе погоды для нескольких городов на 5 дней и проверить правильность полученных данных.",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -204,6 +274,19 @@
 		},
 		{
 			"name": "8.3. Отправить запрос для получения данных о прогнозе погоды для нескольких городов на 5 дней и проверить правильность полученных данных.",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -244,6 +327,19 @@
 		},
 		{
 			"name": "9. Проверить API для получения данных о прогнозе погоды на 16 дней и проверить правильность полученных данных.",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -289,6 +385,19 @@
 		},
 		{
 			"name": "10.1. Проверить API для получения данных о прогнозе погоды на 16 дней и проверить правильность полученных данных.",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -334,6 +443,19 @@
 		},
 		{
 			"name": "10.2. Проверить API для получения данных о прогнозе погоды на 16 дней и проверить правильность полученных данных.",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -379,6 +501,19 @@
 		},
 		{
 			"name": "10.3. Проверить API для получения данных о прогнозе погоды на 16 дней и проверить правильность полученных данных.",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
