@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "6dbde446-5f1b-46d5-ac10-cfa8d5847b2e",
+		"_postman_id": "27898cb9-762d-43c1-b1b5-1bc02a25f8c0",
 		"name": "Mesh Group Test",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "27534637"
@@ -248,7 +248,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.openweathermap.org/data/2.5/forecast/daily?cnt=16&appid=bd5e378503939ddaee76f12ad7a97608&q=Волгоград&units=metric&lang=ru",
+					"raw": "https://api.openweathermap.org/data/2.5/forecast/daily?cnt=16&appid={{API2}}&q=Волгоград&units=metric&lang=ru",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -268,7 +268,7 @@
 						},
 						{
 							"key": "appid",
-							"value": "bd5e378503939ddaee76f12ad7a97608"
+							"value": "{{API2}}"
 						},
 						{
 							"key": "q",
@@ -293,7 +293,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.openweathermap.org/data/2.5/forecast/daily?cnt=16&appid=bd5e378503939ddaee76f12ad7a97608&q=Москва&units=metric&lang=ru",
+					"raw": "https://api.openweathermap.org/data/2.5/forecast/daily?cnt=16&appid={{API2}}&q=Москва&units=metric&lang=ru",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -313,7 +313,7 @@
 						},
 						{
 							"key": "appid",
-							"value": "bd5e378503939ddaee76f12ad7a97608"
+							"value": "{{API2}}"
 						},
 						{
 							"key": "q",
@@ -338,7 +338,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.openweathermap.org/data/2.5/forecast/daily?cnt=16&appid=bd5e378503939ddaee76f12ad7a97608&q=Лондон&units=metric&lang=ru",
+					"raw": "https://api.openweathermap.org/data/2.5/forecast/daily?cnt=16&appid={{API2}}&q=Лондон&units=metric&lang=ru",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -358,7 +358,7 @@
 						},
 						{
 							"key": "appid",
-							"value": "bd5e378503939ddaee76f12ad7a97608"
+							"value": "{{API2}}"
 						},
 						{
 							"key": "q",
@@ -383,7 +383,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.openweathermap.org/data/2.5/forecast/daily?cnt=16&appid=bd5e378503939ddaee76f12ad7a97608&q=Москва&units=metric&lang=ru",
+					"raw": "https://api.openweathermap.org/data/2.5/forecast/daily?cnt=16&appid={{API2}}&q=Москва&units=metric&lang=ru",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -403,7 +403,7 @@
 						},
 						{
 							"key": "appid",
-							"value": "bd5e378503939ddaee76f12ad7a97608"
+							"value": "{{API2}}"
 						},
 						{
 							"key": "q",
@@ -421,6 +421,48 @@
 				}
 			},
 			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "API",
+			"value": "7a7a9756587a33fe0d2aaffcc041ceb4",
+			"type": "string"
+		},
+		{
+			"key": "city",
+			"value": "Volgograd",
+			"type": "string"
+		},
+		{
+			"key": "citiesID",
+			"value": "524894,472757,491422",
+			"type": "string"
+		},
+		{
+			"key": "API2",
+			"value": "bd5e378503939ddaee76f12ad7a97608",
+			"type": "string"
 		}
 	]
 }
